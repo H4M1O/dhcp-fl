@@ -1,7 +1,6 @@
 #!/bin/bash
 # This script stop, clean the dhcpd.leases files and restart the DHCP service.
-# Script created by Claudio Proietti for Gambit Research LTD
-# v. 1.1 created on 17/02/2016
+# Script created by Claudio Proietti v. 1.1 created on 17/02/2016
 
 # Script description
 echo "$(tput setaf 5)This script stop, clean the dhcpd.leases files and restart the DHCP service."
