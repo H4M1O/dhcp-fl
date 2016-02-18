@@ -21,10 +21,6 @@ function main ()
 		# error handling if, it checks if the user insert something different from a number between 1 and 6
 		if [ $OPT -ge 1 -a $OPT -le 6 ] 
 		then
-			clear
-			echo -e "$(tput setaf 7)$(tput setab 1)ATTENTION: You have inserted the wrong option!!!$(tput sgr 0)\n"
-			menu
-		else
 		# case to select the right option from 1 to 6
 			case $OPT in 
 				1 ) start-dhcp
@@ -43,6 +39,10 @@ function main ()
 				break
 				;;
 			esac
+		else
+			echo $OPT
+			clear
+			echo -e "$(tput setaf 7)$(tput setab 1)ATTENTION: You have inserted the wrong option!!!$(tput sgr 0)\n"
 		fi
 
 	done
